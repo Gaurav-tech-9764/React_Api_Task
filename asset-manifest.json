@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Gaurav-tech-9764/React_Api_Task.git/static/css/main.a617e044.chunk.css",
+    "main.js": "/Gaurav-tech-9764/React_Api_Task.git/static/js/main.7ede8ae3.chunk.js",
+    "main.js.map": "/Gaurav-tech-9764/React_Api_Task.git/static/js/main.7ede8ae3.chunk.js.map",
+    "runtime-main.js": "/Gaurav-tech-9764/React_Api_Task.git/static/js/runtime-main.09c84da8.js",
+    "runtime-main.js.map": "/Gaurav-tech-9764/React_Api_Task.git/static/js/runtime-main.09c84da8.js.map",
+    "static/js/2.326f000a.chunk.js": "/Gaurav-tech-9764/React_Api_Task.git/static/js/2.326f000a.chunk.js",
+    "static/js/2.326f000a.chunk.js.map": "/Gaurav-tech-9764/React_Api_Task.git/static/js/2.326f000a.chunk.js.map",
+    "static/js/3.09240593.chunk.js": "/Gaurav-tech-9764/React_Api_Task.git/static/js/3.09240593.chunk.js",
+    "static/js/3.09240593.chunk.js.map": "/Gaurav-tech-9764/React_Api_Task.git/static/js/3.09240593.chunk.js.map",
+    "index.html": "/Gaurav-tech-9764/React_Api_Task.git/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/Gaurav-tech-9764/React_Api_Task.git/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.326f000a.chunk.js.LICENSE.txt": "/Gaurav-tech-9764/React_Api_Task.git/static/js/2.326f000a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.09c84da8.js",
+    "static/js/2.326f000a.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.7ede8ae3.chunk.js"
+  ]
+}
