@@ -4,8 +4,10 @@ import axios from "axios"
 
 
 function ListUser(props) {
-
+console.log(props)
 var [users , setUsers] = useState([])
+
+
 
 useEffect(()=>{
             
@@ -15,6 +17,7 @@ useEffect(()=>{
          }).then((response)=>{
 
         setUsers(response.data)
+      
     },(error)=>{
     })
     },[] )
@@ -28,10 +31,14 @@ const deleteUser = (id) =>{
 alert(response.data)
 
 
+window.location.reload();
+
 },(error)=>{
   })
   }
-console.log('test',users)
+
+console.log('test111',users  )
+
 
     return(
 
