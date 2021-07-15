@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios"
 
 
-function ListUser() {
+function ListUser(props) {
 
 var [users , setUsers] = useState([])
 
@@ -17,7 +17,7 @@ useEffect(()=>{
         setUsers(response.data)
     },(error)=>{
     })
-    },[users] )
+    },[] )
 
 const deleteUser = (id) =>{
   axios({
@@ -31,7 +31,7 @@ alert(response.data)
 },(error)=>{
   })
   }
-
+console.log('test',users)
 
     return(
 
