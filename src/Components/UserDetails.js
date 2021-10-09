@@ -7,7 +7,7 @@ function UserDetails(props) {
 
 
         var para = useParams()
-        var [UserDetails , setUserDetails] = useState([])
+    
         var [errors, setErrors] = useState([])
         const [user, setUser] = useState({
           name: "", 
@@ -62,7 +62,9 @@ function UserDetails(props) {
                }
                  else{
                  alert(response.data.Success)
-                 props.history.push('/Listusers')
+                 
+                 props.history.push('/Listusers') 
+                 window.location.reload()
                  }
            }, err => {})
 
@@ -76,48 +78,56 @@ function UserDetails(props) {
 
         <>
 
-     
-<div class="container">
+<div className="wrapper">
+  <div className="content-wrapper" style={{"min-height": "1126px;"}}>
+
+  <section className="content">
+      <div className="row">
+<div className="container">
 <div className='py-2'>
 <Link to="/Listusers"><button className="btn btn-info btn-sm" type="submit">Back</button></Link>
    </div>
-    <div class="col-sm-12 btn btn-primary" >  
+    <div className="col-sm-12 btn btn-primary" >  
                      View or Update user
     </div> 
    
-     <div  class="card o-hidden border-0 shadow-lg my-5">
-        <div class="card-body p-4" >
+     <div  className="card o-hidden border-0 shadow-lg my-5">
+        <div className="card-body p-4" >
 
         <form id="AddUserForm" onSubmit={handelSubmit}>
-            <div class="form-group" >
+            <div className="form-group" >
          <label for="name">Name:</label>
-             <input type="text"  name="name" value={name} onChange={e => onInputChange(e)} class="form-control" placeholder="Name" id="name"  />
-             <div class="text-danger">{errors.name}</div>    
+             <input type="text"  name="name" value={name} onChange={e => onInputChange(e)} className="form-control" placeholder="Name" id="name"  />
+             <div className="text-danger">{errors.name}</div>    
         </div>
- <div class="form-group"> 
+ <div className="form-group"> 
      <label for="email">Email Address:</label>
-   <input type="text"  name="email" value={email}class="form-control" onChange={e => onInputChange(e)}  placeholder="Enter email" id="email" />
-   <div class="text-danger">{errors.email}</div>
+   <input type="text"  name="email" value={email} className="form-control" onChange={e => onInputChange(e)}  placeholder="Enter email" id="email" />
+   <div className="text-danger">{errors.email}</div>
    </div>
-  <div class="form-group" >
+  <div className="form-group" >
    <label for="phone_number">Number:-</label>
-       <input type="text"  name="phone_number" value={phone_number}class="form-control" onChange={e => onInputChange(e)} placeholder="Phone Number" id="phone_number" />
-       <div class="text-danger">{errors.phone_number}</div>
+       <input type="text"  name="phone_number" value={phone_number} className="form-control" onChange={e => onInputChange(e)} placeholder="Phone Number" id="phone_number" />
+       <div className="text-danger">{errors.phone_number}</div>
 </div>
-<div class="form-group">
+<div className="form-group">
  <label for="password">Password:</label>
-  <input type="text"  name="password" class="form-control" value={password} onChange={e => onInputChange(e)} placeholder="Password" id="password" />
-  <div class="text-danger">{errors.password}</div>  
+  <input type="text"  name="password" className="form-control" value={password} onChange={e => onInputChange(e)} placeholder="Password" id="password" />
+  <div className="text-danger">{errors.password}</div>  
  
  </div>
 <br></br>
 &nbsp;
 &nbsp;
 
-  <input type="submit" value="Update User" class="btn btn-success" />
+  <input type="submit" value="Update User" className="btn btn-success" />
  
  </form>
  </div>
+ </div>
+ </div>
+ </div>
+ </section>
  </div>
  </div>
 
